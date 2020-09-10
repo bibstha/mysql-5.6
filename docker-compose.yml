@@ -1,0 +1,11 @@
+version: '3'
+services:
+  mysql:
+    build: docker
+    ports:
+      - "3478:3478"
+    volumes:
+      - .:/app
+      - ./shopify/cache/mysql_build:/mysql_build
+      - ./shopify/cache/ccache_cache_dir:/ccache_cache_dir
+      - ./shopify/cache/boost_download_cache:/boost_download_cache
