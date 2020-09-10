@@ -14,7 +14,8 @@ RUN apt-get update && \
 RUN apt-get update && \
     apt-get -fy install libaio-dev libmecab-dev psmisc libpam-dev \
                         libssl-dev libnuma-dev libwrap0-dev libldap2-dev \
-                        dh-systemd libcurl4-openssl-dev libldap2-dev liblz4-dev git
+                        dh-systemd libcurl4-openssl-dev libldap2-dev \
+                        liblz4-dev git libboost-all-dev libcap-dev
 
 RUN cd /tmp && \
     wget https://github.com/facebook/zstd/releases/download/v1.4.5/zstd-1.4.5.tar.gz && \

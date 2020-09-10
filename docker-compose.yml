@@ -8,4 +8,3 @@ services:
       - .:/app
       - ./shopify/cache/mysql_build:/mysql_build
       - ./shopify/cache/ccache_cache_dir:/ccache_cache_dir
-      - ./shopify/cache/boost_download_cache:/boost_download_cache
